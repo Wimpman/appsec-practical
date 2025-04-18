@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <title>{{ user }}'s Profile</title>
+  <style>
+    body{font-family:system-ui;background:#fafafa;margin:0;text-align:center}
+    .card{display:inline-block;margin:60px auto;padding:40px 60px;background:#fff;
+          border-radius:12px;box-shadow:0 4px 16px #0002}
+    img{border-radius:50%;width:160px;height:160px;object-fit:cover}
+    h1{margin-bottom:4px} h2{margin-top:0;color:#555}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="{{ pic }}">
+    <h1>{{ user|safe }}</h1>
+    <h2>Status: {{ status|safe }}</h2>
+    <a href="{{ url_for('home') }}" style="display:inline-block;margin-top:18px;">&larr; Home</a>
+  </div>
+</body>
+</html>

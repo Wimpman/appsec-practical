@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+  <title>User Profiles</title>
+  <style>
+    body{font-family:system-ui;background:#f7f8fc;text-align:center;margin:0}
+    .hero{padding:60px 20px}
+    .btn{display:inline-block;padding:12px 26px;background:#007bff;color:#fff;
+         border-radius:6px;text-decoration:none;font-weight:600}
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Welcome to the User Profile App</h1>
+    <p>Please log in to view your profile.</p>
+    <a href="{{ url_for('login') }}" class="btn">Login</a>
+  </div>
+</body>
+</html>

@@ -31,13 +31,13 @@ If for any reason you require additional time or need to negotiate a different s
 
 Running the application **is not required** to complete the assessment. The steps below are provided only if you would like to test vulnerabilities directly or validate your proposed remediations.
 
-1. Ensure Python 3.9 or 3.10 is installed.  
+1. Make sure Python 3.9 or 3.10 is installed.  
 2. Create and activate a virtual environment, then install dependencies:
 
    ```bash
    python -m venv venv
    # On Windows:
-   .\venv\Scripts\activate
+   .\venv\Scripts\Activate.ps1
    # On macOS / Linux:
    source venv/bin/activate
    pip install -r requirements.txt
